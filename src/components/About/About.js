@@ -54,7 +54,6 @@ function About() {
           <Techstack iconName="devicon-firebase-plain-wordmark" />
           <Techstack iconName="devicon-kotlin-plain-wordmark" />
           <Techstack iconName="devicon-mysql-plain-wordmark" />
-
         </Row>
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
@@ -65,7 +64,7 @@ function About() {
           <Techstack iconName="cib-anaconda" />
           <Techstack iconName="cib-postman" />
           <Techstack iconName="cib-cloudflare" />
-          <Techstack iconName="cib-zeit" />          
+          <Techstack iconName="cib-zeit" />
           <Techstack iconName="cib-heroku" />
           <Techstack iconName="devicon-intellij-plain-wordmark" />
           <Techstack iconName="devicon-windows8-original" />
