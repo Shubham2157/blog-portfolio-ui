@@ -1,0 +1,46 @@
+
+
+.card{
+    width: 20rem;
+    margin: 3rem !important;
+    background-color: transparent !important;
+    box-shadow: 1px 5px 5px 3px rgba(247, 39, 39, 0.952) !important;
+    color: white !important;
+    transition: all 0.5s ease 0s !important;
+    height: 80% !important;
+}
+
+.card:hover{
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important
+}
+
+.card-body{
+    padding: 3rem 0 !important;
+}
+
+.car-text{
+    font-size: 0.9rem;
+    padding: 0.4rem 1.9rem;
+}
+
+.container-fluid .row{
+    padding-top: 3rem;
+    margin: 2rem;
+}
+
+.overflow{
+    overflow: hidden;
+}
+.card-img-top{
+    transform: scale(1); 
+    height: 10rem;
+    transition: transform 0.5s ease;
+}
+
+.card-img-top:hover{
+    transform: scale(1.8);
+}
+
+.main-head{
+    margin-top: 100px;
+}
