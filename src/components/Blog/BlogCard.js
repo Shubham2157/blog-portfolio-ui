@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./card-style.css";
-import { BrowserRouter as Router, Route,Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const BlogCard = props => {
     console.log(props.sett)

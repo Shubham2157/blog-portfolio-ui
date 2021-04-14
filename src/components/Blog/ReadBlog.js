@@ -8,17 +8,9 @@ import "react-circular-progressbar/dist/styles.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import ChangingProgressProvider from "./ChangingProgressProvider";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  useParams,
-} from "react-router-dom";
 
-const percentage = 66;
+
 const ReadBlog = (props) => {
-  let { id } = useParams();
   const [Blog, setBlog] = React.useState([]);
   const [isloaded, setisloaded] = React.useState(false);
 
@@ -55,7 +47,7 @@ const ReadBlog = (props) => {
           </div>
         </div>
 
-        {isloaded == false ? (
+        {isloaded === false ? (
           <div
             style={{
               width: 200,

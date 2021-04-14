@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./BlogCard";
 import Particle from "../Particle";
 import axios from "axios";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../Navbar";
 import ReadBlog from "./ReadBlog";
 
