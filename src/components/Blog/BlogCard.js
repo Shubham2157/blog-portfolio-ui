@@ -8,7 +8,6 @@ const BlogCard = props => {
 console.log(props.id)
 
 const onbuttonclick = () =>{
-    props.sett(false);
     props.setselected(props.id)
     
 }
