@@ -4,7 +4,7 @@ import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Particle from "../Particle";
 import Type from "./Type";
-import { BrowserRouter as Router, Route,Link, Switch,useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -18,7 +18,6 @@ function Home() {
                 println(" HELLO THERE <span className="wave">👋🏻</span> ")
                 <strong className="main-name"> I'M 𝒮𝒽𝓊𝒷𝒽𝒶𝓂 𝒦𝓊𝓂𝒶𝓇 𝒥𝒽𝒶 </strong>
               </h1>
-
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
@@ -27,7 +26,9 @@ function Home() {
         </Container>
       </Container>
       <Link to="/about">
-      <button className="btn btn-primary" style={{marginBottom:"80px"}}>Know More</button>
+        <button className="btn btn-primary" style={{ marginBottom: "80px" }}>
+          Know More
+        </button>
       </Link>
     </section>
   );

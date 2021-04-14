@@ -4,8 +4,6 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
 function NavBar() {
@@ -31,7 +29,6 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
           <h2 className="purple">𝓢𝓚𝓙</h2>
         </Navbar.Brand>
         <Navbar.Toggle

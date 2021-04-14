@@ -2,13 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import Card from "./components/Blog/ReadBlog";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Card /> */}
-    <App/>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
