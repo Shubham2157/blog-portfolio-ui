@@ -9,7 +9,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <img src={imgsrc} className="img-fluid" />
+          <img src={imgsrc} className="img-fluid" alt = "loading..." />
           <p style={{ textAlign: "center" }}>
             Hi Everyone, I am <span className="purple">Shubham Kumar Jha </span>
             from <span className="purple">Jamtara Jharkhand, India.</span>
