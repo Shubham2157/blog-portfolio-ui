@@ -403,7 +403,6 @@ html {
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
-  padding-top: 10px !important;
   padding-bottom: 8px !important ;
 }
 .footer-copywright {
@@ -450,11 +449,17 @@ html {
 }
 
 .project-card {
-  padding-top: 50px !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  grid-auto-rows: auto !important;
+  grid-gap: 1rem !important;
+  margin: 0 auto !important;
+  /* padding-top: 50px !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
+  padding-right: 25px !important; */
+  height: 80% !important;
+  width: 20rem !important;
 }
 
 .project-card-view {

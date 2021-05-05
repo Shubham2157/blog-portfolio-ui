@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import axios from "axios";
-import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ChangingProgressProvider from "../Blog/ChangingProgressProvider";
 import { CircularProgressbar ,buildStyles} from 'react-circular-progressbar';
@@ -30,9 +29,10 @@ React.useEffect(() => {
 
 
   return (
-    <Container fluid className="project-section">
+    <div>
+      <div className="main-head">
+    {/* <Container fluid className="project-section"> */}
       <Particle />
-      <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
@@ -40,11 +40,11 @@ React.useEffect(() => {
           Here are a few projects I've worked on recently.
         </p>
         {t?(
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-          {Project.map((item, index) =>{
-                          
-                          return(
+          <div className="container-fluid d-flex justify-content-center">
+            <div className="row">
+          {Project.map((item, index) =>{              
+            return(
+            <div className="col-md-4">
             <ProjectCard
               imgPath={item.cover.url}
               isBlog={false}
@@ -52,10 +52,12 @@ React.useEffect(() => {
               description={item.description}
               link={item.link}
             />
+            </div>
+
              )
-                          })}
-          </Col>
-        </Row>
+            })}
+            </div>
+          </div>
         ):(
           <div className="container-fluid d-flex justify-content-center">  
           <div style={{ width: 150, height: 150, padding:20, justifyContent:"center"}}>
@@ -72,8 +74,9 @@ React.useEffect(() => {
         )
  }
        
-      </Container>
-    </Container>
+     
+    </div>
+    </div>
   );
 }
 
