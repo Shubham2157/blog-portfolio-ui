@@ -89,7 +89,7 @@ const ReadBlog = (props) => {
 const Image = ({ alt, src }) => {
   return (
     <img
-      style={{ height: "35rem", width: "100%", marginLeft: "2vw" }}
+      style={{ height: "35rem", width: "95%", margin: "1rem", justifyContent: "center"}}
       alt={alt}
       src={src}
     />
