@@ -1,7 +1,7 @@
 
 
 .card{
-    width: 20rem;
+    width: 19rem !important;
     margin: 3rem !important;
     background-color: transparent !important;
     box-shadow: 1px 5px 5px 3px rgba(247, 39, 39, 0.952) !important;

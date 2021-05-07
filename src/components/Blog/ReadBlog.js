@@ -33,6 +33,7 @@ const ReadBlog = (props) => {
   React.useEffect(() => {
     handletime();
   }, []);
+  
 
   return (
     <div className="main">
@@ -48,12 +49,13 @@ const ReadBlog = (props) => {
         </div>
 
         {isloaded === false ? (
+          <div className="container-fluid d-flex justify-content-center">
           <div
             style={{
-              width: 200,
-              height: 200,
+              width: 100,
+              height: 100,
               padding: 20,
-              marginLeft: "430px",
+              justifyContent:"center"
             }}
           >
             <ChangingProgressProvider
@@ -62,12 +64,13 @@ const ReadBlog = (props) => {
               {(percentage) => <CircularProgressbar value={percentage} />}
             </ChangingProgressProvider>
           </div>
+          </div>
         ) : (
           <img
             src={Blog.cover_image.url}
             alt="cover"
             className="img-thumbnail img-fluid"
-            style={{ width: "100%", height: "50rem" }}
+            style={{ width: "100%", height: "30rem" }}
           />
         )}
 
@@ -86,7 +89,7 @@ const ReadBlog = (props) => {
 const Image = ({ alt, src }) => {
   return (
     <img
-      style={{ height: "65vh", width: "65vw", marginLeft: "2vw" }}
+      style={{ height: "35rem", width: "100%", marginLeft: "2vw" }}
       alt={alt}
       src={src}
     />

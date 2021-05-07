@@ -14,3 +14,8 @@ blockquote {
     background-color: rgb(214, 255, 243);
 
 }
+
+img {
+    height: 35rem;
+    width: 100%;
+}
