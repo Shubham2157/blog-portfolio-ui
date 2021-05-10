@@ -35,7 +35,7 @@ const Blogs = (props) => {
           <div className="container-fluid d-flex justify-content-center">
             <div className="row">
               {Blog.map((item, index) => {
-                console.log(item.cover_image.url);
+                //console.log(item.cover_image.url);
                 return (
                   <div className="col-md-4">
                     <Card
