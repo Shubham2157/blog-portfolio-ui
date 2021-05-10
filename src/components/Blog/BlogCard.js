@@ -4,8 +4,8 @@ import "./card-style.css";
 import { Link } from "react-router-dom";
 
 const BlogCard = props => {
-    console.log(props.sett)
-console.log(props.id)
+//     console.log(props.sett)
+// console.log(props.id)
 
 const onbuttonclick = () =>{
     props.setselected(props.id)

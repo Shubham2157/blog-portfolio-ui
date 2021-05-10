@@ -11,7 +11,7 @@ import { CircularProgressbar ,buildStyles} from 'react-circular-progressbar';
 const Blogs = (props) => {
   const [Blog, setBlog] = React.useState([]);
   const [t, sett] = React.useState(false);
-  const get = () => {
+  const get = async() => {
     axios.get(`${process.env.REACT_APP_BASE_URL}blogs/`).then((response) => {
       setBlog(response.data);
       sett(true);

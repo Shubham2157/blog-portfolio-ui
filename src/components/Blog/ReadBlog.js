@@ -14,12 +14,16 @@ const ReadBlog = (props) => {
   const [Blog, setBlog] = React.useState([]);
   const [isloaded, setisloaded] = React.useState(false);
 
-  console.log(props.selected);
-  const get = () => {
+  //console.log(props.selected);
+  //console.log(window.location.href);
+  //console.log(window.location.pathname);
+  const arr = window.location.pathname.split('/');
+  //console.log(arr[2]);
+  const get = async() => {
     axios
-      .get(`${process.env.REACT_APP_BASE_URL}blogs/${props.selected}`)
+      .get(`${process.env.REACT_APP_BASE_URL}blogs/${arr[2]}`)
       .then((response) => {
-        console.log(response.data);
+        //console.log(response.data);
         setBlog(response.data);
         setisloaded(true);
       });
