@@ -29,13 +29,8 @@ const ReadBlog = (props) => {
       });
   };
 
-  const handletime = () => {
-    setTimeout(() => {
-      get();
-    }, 5000);
-  };
   React.useEffect(() => {
-    handletime();
+    get();
   }, []);
   
 
@@ -93,7 +88,7 @@ const ReadBlog = (props) => {
 const Image = ({ alt, src }) => {
   return (
     <img
-      style={{ height: "35rem", width: "95%", margin: "1rem", justifyContent: "center"}}
+      // style={{ height: "35rem", width: "95%", margin: "1rem", justifyContent: "center"}}
       alt={alt}
       src={src}
     />

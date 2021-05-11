@@ -15,6 +15,13 @@ blockquote {
 
 }
 
+@media (max-width: 767px) {
+    img{
+        height: 25rem !important;
+        width: 95% !important; 
+    }
+}
+
 img {
     height: 35rem;
     width: 95%;

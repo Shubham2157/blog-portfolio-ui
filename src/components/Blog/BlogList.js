@@ -2,9 +2,6 @@ import React from "react";
 import Card from "./BlogCard";
 import Particle from "../Particle";
 import axios from "axios";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "../Navbar";
-import ReadBlog from "./ReadBlog";
 import ChangingProgressProvider from "./ChangingProgressProvider";
 import { CircularProgressbar ,buildStyles} from 'react-circular-progressbar';
 
