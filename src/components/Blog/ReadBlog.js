@@ -9,7 +9,6 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import ChangingProgressProvider from "./ChangingProgressProvider";
 
-
 const ReadBlog = (props) => {
   const [Blog, setBlog] = React.useState([]);
   const [isloaded, setisloaded] = React.useState(false);
@@ -17,9 +16,9 @@ const ReadBlog = (props) => {
   //console.log(props.selected);
   //console.log(window.location.href);
   //console.log(window.location.pathname);
-  const arr = window.location.pathname.split('/');
+  const arr = window.location.pathname.split("/");
   //console.log(arr[2]);
-  const get = async() => {
+  const get = async () => {
     axios
       .get(`${process.env.REACT_APP_BASE_URL}blogs/${arr[2]}`)
       .then((response) => {
@@ -32,7 +31,6 @@ const ReadBlog = (props) => {
   React.useEffect(() => {
     get();
   }, []);
-  
 
   return (
     <div className="main">
@@ -49,20 +47,20 @@ const ReadBlog = (props) => {
 
         {isloaded === false ? (
           <div className="container-fluid d-flex justify-content-center">
-          <div
-            style={{
-              width: 100,
-              height: 100,
-              padding: 20,
-              justifyContent:"center"
-            }}
-          >
-            <ChangingProgressProvider
-              values={[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}
+            <div
+              style={{
+                width: 100,
+                height: 100,
+                padding: 20,
+                justifyContent: "center",
+              }}
             >
-              {(percentage) => <CircularProgressbar value={percentage} />}
-            </ChangingProgressProvider>
-          </div>
+              <ChangingProgressProvider
+                values={[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]}
+              >
+                {(percentage) => <CircularProgressbar value={percentage} />}
+              </ChangingProgressProvider>
+            </div>
           </div>
         ) : (
           <img
