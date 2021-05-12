@@ -17,7 +17,7 @@ blockquote {
 
 @media (max-width: 767px) {
     img{
-        height: 25rem !important;
+        height: 15rem !important;
         width: 95% !important; 
     }
 }
