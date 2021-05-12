@@ -12,6 +12,7 @@ import ChangingProgressProvider from "./ChangingProgressProvider";
 const ReadBlog = (props) => {
   const [Blog, setBlog] = React.useState([]);
   const [isloaded, setisloaded] = React.useState(false);
+  let createdat, publishedat, updatedat; 
 
   //console.log(props.selected);
   //console.log(window.location.href);
@@ -32,6 +33,25 @@ const ReadBlog = (props) => {
     get();
   }, []);
 
+  function getdatetime(blogdatetime){
+  var localDate = new Date(blogdatetime);
+  //console.log(localDate);
+  let date = JSON.stringify(localDate)
+  date = date.slice(1,11).split('-').reverse().join('/')
+  //console.log(date) 
+  const time = localDate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric',  hour12: true })
+  //console.log(time); 
+  // https://stackoverflow.com/questions/63569985/how-to-convert-data-yyyy-mm-dd-to-dd-mm-yyyy-in-reactjs
+  return  date + " " + time
+  
+  }
+
+  if(isloaded === true){
+    createdat = "CreatedAt " + getdatetime(Blog.createdAt)
+    publishedat = "PublishedAt " + getdatetime(Blog.published_at)
+    updatedat = "updatedAt " + getdatetime(Blog.updatedAt)
+  }
+
   return (
     <div className="main">
       <div className="container">
@@ -40,7 +60,9 @@ const ReadBlog = (props) => {
             <h1 className="display-4">{Blog.title}</h1>
             <p className="lead">{Blog.description}</p>
             <div>
-              <p className="lead">{Blog.createdAt}</p>
+              <p className="lead">{createdat}</p>
+              <p className="lead">{publishedat}</p>
+              <p className="lead">{updatedat}</p>
             </div>
           </div>
         </div>
