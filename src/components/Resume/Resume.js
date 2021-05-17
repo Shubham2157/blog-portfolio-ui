@@ -17,7 +17,7 @@ function Resume() {
         </Row>
         <Row className="resume">
           <Col md={6} className="resume-left">
-            <h3 className="resume-title">Experience</h3>
+            {/* <h3 className="resume-title">Experience</h3>
 
              <Resumecontent
               title="Summer Intern at HighRadius"
@@ -27,7 +27,7 @@ function Resume() {
                 "Used Java and React Js for this project"
                
               ]}
-            />
+            /> */}
 
             <h3 className="resume-title">Extracurricular Activities</h3>
             <Resumecontent
